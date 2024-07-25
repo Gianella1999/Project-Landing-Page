@@ -2,16 +2,13 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-   
+body{  
     min-height: 100vh;
     margin: 0;
     overflow:scroll;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-
 }
 
 .header, .footer{
@@ -23,17 +20,31 @@ body{
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+    font-size: 18px;
 
+}
+
+.top{   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:750px;   
+}
+
+.logo{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size:24px;
+    
  
 }
 
-
-.top
-{   display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    gap:750px; 
-   
+.logo img{
+   display: flex;
+   height: 37px;
+   justify-items: center;
+   align-items: center;
 }
 
 nav{
@@ -45,21 +56,21 @@ nav{
     gap:40px;
 }
 
-a{
-
+.links a, .card a{
     text-decoration: none;
     color:#e5e7eb;
     
 }
 
 .bottom{
-    border:none;
     display: flex;
     justify-content: space-evenly;
     gap:80px;
     padding: 50px;
-    align-items: center;
-    
+    align-items: center;   
+}
+.text h1{
+    margin:0px;
 }
 
 .imagen img{
@@ -73,6 +84,42 @@ button{
     background-color:  #3882f6;
     color: #e5e7eb;
     border-radius: 4px;
+   
+}
+
+.About, .declaration{
+
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.box-about{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 170px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.box-about li{
+    list-style: none;
+    text-align: left;
+}
+
+.About  a{
+    text-decoration: none;
+    color: #3982f6;
+    font-weight: bold;
+    padding: 20px ;
+
 }
 
 .contener{
@@ -83,18 +130,15 @@ button{
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    background-color: #e5e7eb;
-    
+    background-color: #e5e7eb;   
 
 }
 
 .box{
-  
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    
-    
+    gap: 42px;
+    padding: 50px;
 
 }
 
@@ -114,79 +158,40 @@ button{
 
     height:150px;
     border-radius: 4px;
+    padding-bottom: 10px;
 
 }
 
-.logo{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    font-size:larger
+.declaration article{
+    padding: 10px 170px;
     
 }
 
-.logo img{
-   display: flex;
-   height: 50px;
-   justify-items: center;
-   align-items: center;
-}
-
-.About, .declaration{
-
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
-}
-
-.box-about{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 50px;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-   
-
+.autor{
+  text-align: right;
+  padding-right: 27px;
+  font-weight: 600 ;
 
 }
-
-.reminder{
-
-    display: flex;
-    padding: 50px;
-    justify-content: center;
-  
-}
-
-.reminder button{
-
-    border: 1px solid #e5e7eb;
-}
-
-
 
 .call{
     display: flex;
     justify-content: center;
     align-content:center;
     background-color: #e5e7eb;
-    padding:50px; 
+    padding:50px;     
 }
 
 .windown{
-    display: flex;
+
     background-color: #3982f6;
     color: #e5e7eb;
-    padding: 50px;
+    padding: 25px 50px;
     flex-wrap: wrap;
-    
-    
+       
 }
 
+.windown  button {
+border: 1px solid #e5e7eb;
 
+}
